@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Hi-Winsen/admin#readme",
   "dependencies": {
     "egg": "^2.29.4",
+    "font-awesome-icon-chars": "^2.6.0",
     "fs-extra": "^10.0.0",
     "github-markdown-css": "^4.0.0",
     "highlight.js": "^11.0.1",
@@ -32,7 +33,9 @@
     "markdown-it-highlightjs": "^3.5.0",
     "markdown-it-ins": "^3.0.1",
     "markdown-it-katex": "^2.0.3",
+    "markdown-it-latex": "^0.2.0",
     "markdown-it-mark": "^3.0.1",
+    "markdown-it-regex": "^0.2.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "moment": "^2.29.1"

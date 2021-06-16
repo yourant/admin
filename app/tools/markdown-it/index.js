@@ -7,6 +7,7 @@ const md = new MarkdownIt()
 
 const node_modules_path = path.join(__dirname, '../../../node_modules')
 
+const latexCss = fs.readFileSync(path.resolve(node_modules_path, 'markdown-it-latex/dist/index.css'), 'utf-8')
 const highlightCss = fs.readFileSync(path.resolve(node_modules_path, 'highlight.js/styles/atom-one-light.css'), 'utf-8')
 const githubMarkdownCss = fs.readFileSync(path.resolve(node_modules_path, 'github-markdown-css/github-markdown.css'), 'utf-8')
 const indexCss = fs.readFileSync(path.resolve(__dirname, './index.css'), 'utf-8')
@@ -21,13 +22,15 @@ md
   .use(require('markdown-it-abbr'))
   .use(require('markdown-it-mark'))
   .use(require('markdown-it-emoji'))
-  .use(require('markdown-it-katex'))
   .use(require('markdown-it-deflist'))
   .use(require('markdown-it-footnote'))
   .use(require('./markdown-it-highlight'))
   .use(require('./markdown-it-image'))
   .use(require('./markdown-it-echarts'))
   .use(require('./markdown-it-flowchart'))
+  .use(require('./markdown-it-font-awsome'))
+  .use(require('markdown-it-latex').default)
+  .use(require('markdown-it-katex'), { throwOnError: false, errorColor: '#cc0000' })
   .use(MarkdownItContainer, 'info', markdownItAlert.info)
   .use(MarkdownItContainer, 'error', markdownItAlert.error)
   .use(MarkdownItContainer, 'warning', markdownItAlert.warning)
@@ -50,6 +53,7 @@ module.exports = function (markdownStr) {
     <markdown-component>
       <style slot="style">${highlightCss}</style>
       <style slot="style">${githubMarkdownCss}</style>
+      <style slot="style">${latexCss}</style>
       <style slot="style">${indexCss}</style>
       <div slot="content" class="markdown-body">${md.render(markdownStr)}</div>
     </markdown-component>

@@ -507,6 +507,11 @@ arrify@^1.0.0, arrify@^1.0.1:
   resolved "http://nexus.sheincorp.cn:4873/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
+asciimath-to-latex@^0.3.2:
+  version "0.3.2"
+  resolved "http://nexus.sheincorp.cn:4873/asciimath-to-latex/-/asciimath-to-latex-0.3.2.tgz#1f6e6b36ccc11e3de0ceeffa3dce16483ec28b4e"
+  integrity sha1-H25rNszBHj3gzu/6Pc4WSD7Ci04=
+
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "http://nexus.sheincorp.cn:4873/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
@@ -2910,6 +2915,11 @@ flat@^4.1.0:
   dependencies:
     is-buffer "~2.0.3"
 
+font-awesome-icon-chars@^2.6.0:
+  version "2.6.0"
+  resolved "http://nexus.sheincorp.cn:4873/font-awesome-icon-chars/-/font-awesome-icon-chars-2.6.0.tgz#99bf9c5712db06c115f419f120ba30567963851b"
+  integrity sha1-mb+cVxLbBsEV9BnxILowVnljhRs=
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "http://nexus.sheincorp.cn:4873/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -3862,6 +3872,13 @@ katex@^0.6.0:
   dependencies:
     match-at "^0.1.0"
 
+katex@^0.9.0-alpha2:
+  version "0.9.0"
+  resolved "http://nexus.sheincorp.cn:4873/katex/-/katex-0.9.0.tgz#26a7d082c21d53725422d2d71da9b2d8455fbd4a"
+  integrity sha1-JqfQgsIdU3JUItLXHamy2EVfvUo=
+  dependencies:
+    match-at "^0.1.1"
+
 keygrip@~1.1.0:
   version "1.1.0"
   resolved "http://nexus.sheincorp.cn:4873/keygrip/-/keygrip-1.1.0.tgz#871b1681d5e159c62a445b0c74b615e0917e7226"
@@ -4237,10 +4254,23 @@ markdown-it-katex@^2.0.3:
   dependencies:
     katex "^0.6.0"
 
+markdown-it-latex@^0.2.0:
+  version "0.2.0"
+  resolved "http://nexus.sheincorp.cn:4873/markdown-it-latex/-/markdown-it-latex-0.2.0.tgz#b7421ddb8ecfdb65f4428b50691c1308e18ab2f0"
+  integrity sha1-t0Id247P22X0QotQaRwTCOGKsvA=
+  dependencies:
+    asciimath-to-latex "^0.3.2"
+    katex "^0.9.0-alpha2"
+
 markdown-it-mark@^3.0.1:
   version "3.0.1"
   resolved "http://nexus.sheincorp.cn:4873/markdown-it-mark/-/markdown-it-mark-3.0.1.tgz#51257db58787d78aaf46dc13418d99a9f3f0ebd3"
   integrity sha1-USV9tYeH14qvRtwTQY2ZqfPw69M=
+
+markdown-it-regex@^0.2.0:
+  version "0.2.0"
+  resolved "http://nexus.sheincorp.cn:4873/markdown-it-regex/-/markdown-it-regex-0.2.0.tgz#e09ad2d75209720d591d3949e1142c75c0fbecf6"
+  integrity sha1-4JrS11IJcg1ZHTlJ4RQsdcD77PY=
 
 markdown-it-sub@^1.0.0:
   version "1.0.0"
@@ -4263,7 +4293,7 @@ markdown-it@^12.0.6:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
-match-at@^0.1.0:
+match-at@^0.1.0, match-at@^0.1.1:
   version "0.1.1"
   resolved "http://nexus.sheincorp.cn:4873/match-at/-/match-at-0.1.1.tgz#25d040d291777704d5e6556bbb79230ec2de0540"
   integrity sha1-JdBA0pF3dwTV5lVru3kjDsLeBUA=

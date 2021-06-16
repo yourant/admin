@@ -12,6 +12,28 @@
 Note: Only `h2` and `h3` are shown in toc.
 
 
+## AsciiMath
+
+Inline AsciiMath: `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
+
+```AsciiMath
+oint_Cx^3 dx+4y^2 dy
+
+2=(((3-x)xx2)/(3-x))
+
+sum_(m=1)^oosum_(n=1)^oo(m^2 n)/(3^m(m3^n+n3^m)
+```
+
+```ASCIIMath
+phi_n(kappa) = 1/(4pi^2 kappa^2)
+ int_0^oo (sin(kappa R))/(kappa R)
+ del/(del R)
+[R^2 (del D_n (R))/(del R)] del R
+```
+
+[AsciiMath Documentation](http://asciimath.org/)
+
+
 ```echarts
 {
   "width": 500,
@@ -170,26 +192,6 @@ Term 2
 [Definition List Syntax](http://pandoc.org/README.html#definition-lists)
 
 
-## AsciiMath
-
-Inline AsciiMath: `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
-
-```AsciiMath
-oint_Cx^3 dx+4y^2 dy
-
-2=(((3-x)xx2)/(3-x))
-
-sum_(m=1)^oosum_(n=1)^oo(m^2 n)/(3^m(m3^n+n3^m)
-```
-
-```ASCIIMath
-phi_n(kappa) = 1/(4pi^2 kappa^2)
- int_0^oo (sin(kappa R))/(kappa R)
- del/(del R)
-[R^2 (del D_n (R))/(del R)] del R
-```
-
-[AsciiMath Documentation](http://asciimath.org/)
 
 ## Subscript: H~2~O
 
@@ -205,7 +207,7 @@ You can also use inline math: `$29^{th}$`
 
 [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)
 
-## Fontawesome: :fa-car: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:
+## Fontawesome: :fa-car: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart: :fa-university:
 
 [All the Font Awesome icons](http://fontawesome.io/icons/)
 
