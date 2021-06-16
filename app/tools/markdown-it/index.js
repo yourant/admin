@@ -26,6 +26,8 @@ md
   .use(require('markdown-it-footnote'))
   .use(require('./markdown-it-highlight'))
   .use(require('./markdown-it-image'))
+  .use(require('./markdown-it-echarts'))
+  .use(require('./markdown-it-flowchart'))
   .use(MarkdownItContainer, 'info', markdownItAlert.info)
   .use(MarkdownItContainer, 'error', markdownItAlert.error)
   .use(MarkdownItContainer, 'warning', markdownItAlert.warning)

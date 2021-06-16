@@ -12,8 +12,57 @@
 Note: Only `h2` and `h3` are shown in toc.
 
 
+```echarts
+{
+  "width": 500,
+  "height": 400,
+  "series": [
+    {
+      "name": "访问来源",
+      "type": "pie",
+      "radius": "55%",
+      "data": [
+        {
+          "value": 235,
+          "name": "视频广告"
+        },
+        {
+          "value": 274,
+          "name": "联盟广告"
+        },
+        {
+          "value": 310,
+          "name": "邮件营销"
+        },
+        {
+          "value": 335,
+          "name": "直接访问"
+        },
+        {
+          "value": 400,
+          "name": "搜索引擎"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
 ``` image
   url http://www.aqcoder.com/gvf-project.png
+  url https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0
+
+  container-style
+  display flex
+  align-items center
+
+  image-style
+  width        300px
+  object-fit   contain
+  border-radius 5px  
+```
+``` image
   url https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0
 
   container-style
@@ -166,41 +215,6 @@ You can also use inline math: `$29^{th}$`
 
 The width and height is the size for chart container.
 
-```echarts
-{
-  "width": 500,
-  "height": 400,
-  "series": [
-    {
-      "name": "访问来源",
-      "type": "pie",
-      "radius": "55%",
-      "data": [
-        {
-          "value": 235,
-          "name": "视频广告"
-        },
-        {
-          "value": 274,
-          "name": "联盟广告"
-        },
-        {
-          "value": 310,
-          "name": "邮件营销"
-        },
-        {
-          "value": 335,
-          "name": "直接访问"
-        },
-        {
-          "value": 400,
-          "name": "搜索引擎"
-        }
-      ]
-    }
-  ]
-}
-```
 
 
 
@@ -213,27 +227,40 @@ The width and height is the size for chart container.
 
 ## flowchart.js
 
-```flowchart.js
-st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
+``` flowchart.js
+st=>start: Start:>http://www.google.com[blank]
+e=>end:>http://www.google.com
+op1=>operation: My Operation
+sub1=>subroutine: My Subroutine
 cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|request
+or No?:>http://www.google.com
+io=>inputoutput: catch something...
 para=>parallel: parallel tasks
 
-st->op1(right)->cond
-cond(yes, right)->c2
+st->op1->cond
+cond(yes)->io->e
 cond(no)->para
-c2(true)->io->e
-c2(false)->e
+para(path1, bottom)->sub1(right)->op1
+para(path2, top)->op1
 
-para(path1, bottom)->sub1(left)->op1
-para(path2, right)->op2->e
+```
 
-st@>op1({"stroke":"Red"})@>cond({"stroke":"Red","stroke-width":6,"arrow-end":"classic-wide-long"})@>c2({"stroke":"Red"})@>op2({"stroke":"Red"})@>e({"stroke":"Red"})
+``` flowchart.js
+
+st=>start: 开始
+e=>end: 结束
+op1=>operation: 作业1
+sub1=>subroutine: 子程序
+cond=>condition: Yes or No?
+io=>inputoutput: 输入输出
+para=>parallel: 并行任务
+st->op1->cond
+cond(yes)->io->e
+cond(no)->para
+para(path1, bottom)->sub1(right)->op1
+para(path2, top)->op1
+
+st@>op1({"stroke":"Red"})@>cond({"stroke":"Red"})@>para({"stroke":"Red","stroke-width":4,"arrow-end":"classic-wide-long"})@>sub1({"stroke":"Red"})@>e({"stroke":"Red"})
+
 ```
 
