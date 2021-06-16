@@ -1,0 +1,45 @@
+div[class^="markdown-it-alert"] {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+div[class^="markdown-it-alert"] + div[class^="markdown-it-alert"] {
+  margin-top: 10px;
+}
+div[class^="markdown-it-alert-success"] {
+  background-color: hsla(94, 70%, 74%, .3);
+}
+div[class^="markdown-it-alert-warning"] {
+  background-color: hsla(46, 100%, 74%, .3);
+}
+div[class^="markdown-it-alert-info"] {
+  background-color: hsla(200, 100%, 74%, .3);
+}
+div[class^="markdown-it-alert-error"] {
+  background-color: hsla(360, 91%, 55%, .3);
+}
+
+i[class^="markdown-it-alert-icon"] {
+  height: 16px;
+  margin-right: 10px;
+}
+
+i[class^="markdown-it-alert-icon-success"] {
+  color: hsla(94, 70%, 74%, 1);
+}
+i[class^="markdown-it-alert-icon-warning"] {
+  color: hsla(46, 100%, 74%, 1);
+}
+i[class^="markdown-it-alert-icon-info"] {
+  color: hsla(200, 100%, 74%, 1);
+}
+i[class^="markdown-it-alert-icon-error"] {
+  color: hsla(360, 91%, 55%, 1);
+}
+
+div[class^="markdown-it-alert"] p {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}

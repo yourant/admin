@@ -3,14 +3,62 @@
 
 ## Image size and Viewer
 
-![gvf](http://www.aqcoder.com/gvf-project.png =x50)
-![ravenq](http://www.aqcoder.com/ravenq-qr.png =50x50)
+
 
 ## GitHub Table of Contents
 
 [toc]
 
 Note: Only `h2` and `h3` are shown in toc.
+
+
+``` image
+  url http://www.aqcoder.com/gvf-project.png
+  url https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4&r=0
+
+  container-style
+  display flex
+  align-items center
+
+  image-style
+  width        300px
+  object-fit   contain
+  border-radius 5px  
+```
+
+## code
+
+### c
+```c
+#include <stdio.h>
+int main(int argc char* argv[]) {
+  printf("Hello, World!");
+  return 0;
+}
+```
+
+### json
+
+``` json
+{
+  "name": "markdown-it-vue"
+}
+```
+
+### javascript
+``` javascript
+import MarkdownItVue from 'markdown-it-vue'
+export default {
+  components: {
+    MarkdownItVue
+  }
+}
+```
+
+### bash
+``` bash
+npm install markdown-it-vue
+```
 
 ## alter
 
@@ -31,6 +79,7 @@ You have new mail.
 ::: error
 Staying up all night is bad for health.
 :::
+
 
 ## mermaid charts
 
@@ -153,39 +202,7 @@ The width and height is the size for chart container.
 }
 ```
 
-## code
 
-### c
-```c
-#include <stdio.h>
-int main(int argc char* argv[]) {
-  printf("Hello, World!");
-  return 0;
-}
-```
-
-### json
-
-```json
-{
-  "name": "markdown-it-vue"
-}
-```
-
-### javascript
-```json
-import MarkdownItVue from 'markdown-it-vue'
-export default {
-  components: {
-    MarkdownItVue
-  }
-}
-```
-
-### bash
-```bash
-npm install markdown-it-vue
-```
 
 ## table
 
