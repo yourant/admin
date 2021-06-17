@@ -21,7 +21,7 @@ div[class^="markdown-it-alert-error"] {
 }
 
 i[class^="markdown-it-alert-icon"] {
-  height: 16px;
+  font-size: 22px;
   margin-right: 10px;
 }
 
